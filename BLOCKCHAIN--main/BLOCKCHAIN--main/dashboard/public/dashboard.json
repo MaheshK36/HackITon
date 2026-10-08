@@ -1,0 +1,161 @@
+{
+  "summary": {
+    "total_events": 10,
+    "total_anomalies": 1,
+    "active_sessions": 7,
+    "audit_records_onchain": 55,
+    "cycles_run": 0,
+    "last_updated": "2026-08-30T12:21:06.240223+00:00"
+  },
+  "events": [
+    {
+      "event_id": "EVT-49D0653F",
+      "user_id": "usr_admin",
+      "session_id": "SESS-E7976C",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.145223+00:00",
+      "ip_address": "10.0.1.1",
+      "location": "US-Central",
+      "device_info": "Chrome/Windows",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-C8A43F5E",
+      "user_id": "usr_bob",
+      "session_id": "SESS-2C1948",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.145375+00:00",
+      "ip_address": "192.168.1.110",
+      "location": "US-West",
+      "device_info": "Curl/7.68.0",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-D203DBE2",
+      "user_id": "usr_alice",
+      "session_id": "SESS-B032C9",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.145505+00:00",
+      "ip_address": "192.168.1.105",
+      "location": "US-East",
+      "device_info": "Chrome/MacOS",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-64E9D206",
+      "user_id": "usr_charlie",
+      "session_id": "SESS-715180",
+      "event_type": "logout",
+      "timestamp": "2026-08-30T12:21:06.145639+00:00",
+      "ip_address": "10.0.4.15",
+      "location": "US-East",
+      "device_info": "Terminal/Linux",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-DC1CA3B5",
+      "user_id": "usr_bob",
+      "session_id": "SESS-8B0C49",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.145786+00:00",
+      "ip_address": "192.168.1.110",
+      "location": "US-West",
+      "device_info": "Firefox/Windows",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-2533017A",
+      "user_id": "usr_admin",
+      "session_id": "SESS-CE2599",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.145908+00:00",
+      "ip_address": "10.0.1.1",
+      "location": "US-Central",
+      "device_info": "Chrome/Windows",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-C627BE3E",
+      "user_id": "usr_alice",
+      "session_id": "SESS-3322F1",
+      "event_type": "logout",
+      "timestamp": "2026-08-30T12:21:06.145985+00:00",
+      "ip_address": "192.168.1.105",
+      "location": "US-East",
+      "device_info": "Chrome/MacOS",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-CA2E58A3",
+      "user_id": "usr_charlie",
+      "session_id": "SESS-2EC0EC",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.146050+00:00",
+      "ip_address": "10.0.4.15",
+      "location": "US-East",
+      "device_info": "Terminal/Linux",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-6349DE2B",
+      "user_id": "usr_guest",
+      "session_id": "SESS-938927",
+      "event_type": "logout",
+      "timestamp": "2026-08-30T12:21:06.146152+00:00",
+      "ip_address": "172.16.0.42",
+      "location": "US-East",
+      "device_info": "Edge/Windows",
+      "status": "success"
+    },
+    {
+      "event_id": "EVT-6642C87E",
+      "user_id": "usr_guest",
+      "session_id": "SESS-3D7B59",
+      "event_type": "login",
+      "timestamp": "2026-08-30T12:21:06.146268+00:00",
+      "ip_address": "172.16.0.42",
+      "location": "US-East",
+      "device_info": "Edge/Windows",
+      "status": "success"
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "INC-20260830-0010",
+      "user_id": "usr_bob",
+      "anomaly_type": "multivariate_access_anomaly",
+      "state": "\ud83d\udfe1 Access Alert Opened",
+      "occurrences": 1,
+      "peak_confidence": 0.8,
+      "start_time": "2026-08-30T12:21:06.239220+00:00",
+      "description": "Multi-confirm access anomaly for user 'usr_bob'. Agreed methods: isolation_forest, rule_heuristics.",
+      "findings": [
+        {
+          "finding_id": "ANOM-usr_bob-1788092466",
+          "anomaly_type": "multivariate_access_anomaly",
+          "user_id": "usr_bob",
+          "timestamp": "2026-08-30T12:21:06.238147+00:00",
+          "confidence": 0.8,
+          "description": "Multi-confirm access anomaly for user 'usr_bob'. Agreed methods: isolation_forest, rule_heuristics.",
+          "methods_agreed": [
+            "isolation_forest",
+            "rule_heuristics"
+          ],
+          "raw_metrics": {
+            "total_attempts": 2,
+            "failed_count": 0,
+            "suspicious_geo_count": 0,
+            "unknown_device_count": 1,
+            "unique_ips": 1
+          },
+          "event_ids": [
+            "EVT-C8A43F5E",
+            "EVT-DC1CA3B5"
+          ],
+          "is_anomaly": true
+        }
+      ]
+    }
+  ],
+  "audit_trail": []
+}

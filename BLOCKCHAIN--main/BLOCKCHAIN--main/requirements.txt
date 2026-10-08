@@ -1,0 +1,51 @@
+# ── Mantle Intel Agent — Python Dependencies ────────────────────────────────
+# Source of truth: pyproject.toml + requirements.in
+# To regenerate fully-pinned: pip-compile pyproject.toml --extra otel --extra ratelimit -o requirements.txt
+# Install: pip install -r requirements.txt
+#
+# NOTE: Using flexible version constraints here instead of fully-pinned
+# transitive deps, because the previous fully-pinned file had multiple
+# incorrect version pins that caused ResolutionImpossible errors on CI.
+# Flexible constraints let pip resolve the correct compatible versions.
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.1
+structlog>=24.1.0
+pydantic>=2.0.0
+
+# ── Web3 / Blockchain ─────────────────────────────────────────────────────────
+# Note: web3 6.x requires eth-account<0.13, eth-typing<5, eth-utils<5, hexbytes<0.4
+web3>=6.15.0,<7.0.0
+eth-account>=0.8.0,<0.13
+eth-hash[pycryptodome]>=0.5.1
+eth-typing>=3.0.0,<5.0.0
+eth-utils>=2.1.0,<5
+
+# ── Machine Learning (Anomaly Detection) ──────────────────────────────────────
+numpy>=1.26.0
+scikit-learn>=1.4.0
+scipy>=1.13.0
+joblib>=1.4.0
+
+# ── HTTP ──────────────────────────────────────────────────────────────────────
+httpx>=0.27.0
+requests>=2.31.0
+
+# ── API Server ────────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+
+# ── Telegram Bot ──────────────────────────────────────────────────────────────
+python-telegram-bot>=21.3
+
+# ── P2-16: Observability (OpenTelemetry) ──────────────────────────────────────
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+opentelemetry-exporter-otlp>=1.20.0
+
+# ── P2-19: Rate Limiting ─────────────────────────────────────────────────────
+slowapi>=0.1.9
+
+# ── Data & Visualization ──────────────────────────────────────────────────────
+pandas>=2.2.0
+plotly>=5.22.0

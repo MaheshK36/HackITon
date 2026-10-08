@@ -1,0 +1,110 @@
+{
+  "model_version": "gnn-cyberseer-v1.0",
+  "architecture": "CyberGNNForecastModel (GraphSAGE + Recurrent GRU Propagation)",
+  "accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "total_samples": 810,
+  "train_samples": 515,
+  "val_samples": 92,
+  "test_samples": 203,
+  "classes": [
+    "BENIGN",
+    "PortScan",
+    "BruteForce",
+    "DataExfiltration",
+    "DoS",
+    "CommandExecution"
+  ],
+  "class_breakdown": {
+    "BENIGN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 75
+    },
+    "PortScan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 25
+    },
+    "BruteForce": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 20
+    },
+    "DataExfiltration": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    },
+    "DoS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 63
+    },
+    "CommandExecution": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    }
+  },
+  "confusion_matrix": [
+    [
+      75,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      25,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      20,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      63,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      10
+    ]
+  ],
+  "trained_at": "2026-10-08T14:03:25.568428+00:00",
+  "seed": 42
+}

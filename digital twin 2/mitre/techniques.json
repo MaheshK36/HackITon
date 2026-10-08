@@ -1,0 +1,44 @@
+{
+  "T1046": {
+    "technique_id": "T1046",
+    "name": "Network Service Discovery / Port Scan",
+    "tactic": "Reconnaissance / Discovery",
+    "description": "Adversaries may attempt to get a listing of services running on remote hosts to identify vulnerable targets.",
+    "dataset_labels": ["PortScan"]
+  },
+  "T1110": {
+    "technique_id": "T1110",
+    "name": "Brute Force Credentials",
+    "tactic": "Credential Access",
+    "description": "Adversaries may use brute force techniques to gain access to accounts by systematically trying passwords.",
+    "dataset_labels": ["BruteForce"]
+  },
+  "T1498": {
+    "technique_id": "T1498",
+    "name": "Network Denial of Service",
+    "tactic": "Impact",
+    "description": "Adversaries may perform Network DoS attacks to degrade or disrupt service availability.",
+    "dataset_labels": ["DoS"]
+  },
+  "T1059": {
+    "technique_id": "T1059",
+    "name": "Command and Scripting Interpreter",
+    "tactic": "Execution / C2",
+    "description": "Adversaries may abuse command and script interpreters to execute arbitrary commands on victim systems.",
+    "dataset_labels": ["CommandExecution"]
+  },
+  "T1041": {
+    "technique_id": "T1041",
+    "name": "Exfiltration Over C2 Channel",
+    "tactic": "Exfiltration",
+    "description": "Adversaries may steal data by exfiltrating it over an existing Command and Control (C2) channel.",
+    "dataset_labels": ["DataExfiltration"]
+  },
+  "T0000": {
+    "technique_id": "T0000",
+    "name": "Benign Network Activity",
+    "tactic": "None",
+    "description": "Normal, expected system and network communication.",
+    "dataset_labels": ["BENIGN"]
+  }
+}

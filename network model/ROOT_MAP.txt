@@ -1,0 +1,175 @@
+================================================================================
+                    CyberSeer - ROOT FOLDER MAP (VISUAL)
+================================================================================
+
+🎯 ENTRY POINTS (Start Here - Pick One):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   📄 START.md                    ← 5-minute quick start (READ FIRST!)
+   📄 QUICKSTART.md               ← 15-minute overview with commands
+   📄 PHASE_STATUS.md             ← Complete 11-phase system plan
+   📄 INDEX.md                    ← Full file index and reference
+   📄 SYSTEM_READY.md             ← What you have & what to do
+
+🚀 EXECUTION (Run Phases):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   🐍 run_all_phases.py           ← Master orchestrator (ALL phases)
+      └─ python run_all_phases.py        (Phases 1-5)
+      └─ python run_all_phases.py 1      (Phase 1 only)
+      └─ python run_all_phases.py 2,3,4  (Phases 2-4)
+      └─ python run_all_phases.py 5      (Phase 5)
+
+🎨 DASHBOARDS (View Status):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   🐍 main.py                     ← Interactive CLI menu (13 options)
+      └─ python main.py                  (Open menu)
+
+   🐍 dashboard.py                ← Terminal visual dashboard
+      └─ python dashboard.py             (Show status board)
+
+   🌐 dashboard.html              ← Web-based visual dashboard
+      └─ Open in browser                 (Beautiful web UI)
+
+📚 DOCUMENTATION (Deep Dive):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   📖 README.md                   ← Project overview
+   📖 GETTING_STARTED.md          ← Detailed setup guide
+   📖 QUICKSTART.md               ← 15-min quick reference
+   📖 PHASE_STATUS.md             ← Complete 11-phase architecture
+   📖 INDEX.md                    ← Full file index
+   📖 START.md                    ← 5-min absolute beginner guide
+
+📁 SUBFOLDERS (Code & Data):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   📦 ml/
+      ├── preprocessing/          ← Phase 1: Data pipeline (5 scripts)
+      │   ├── data_loader.py
+      │   ├── preprocess_dataset.py
+      │   ├── build_sequences.py
+      │   ├── build_graphs.py
+      │   └── validate_dataset.py
+      └── models/                 ← Phases 2-5: Model training
+          ├── baseline.py         (Phase 2)
+          ├── lstm_model.py       (Phase 3)
+          ├── gnn_transformer_model.py  (Phase 4)
+          └── phase5_analysis.py  (Phase 5)
+
+   📦 docs/
+      ├── PHASES_2_4_MODELS.md    ← ML architecture theory
+      ├── RESEARCH_FOUNDATION.md  ← Phase 5 formulas & math
+      └── DATASET_SETUP.md        ← How to get datasets
+
+   📦 data/                       ← (Generated during execution)
+      ├── processed/features.csv
+      ├── sequences/X_sequences.npy
+      ├── graphs/graphs.json
+      └── phase5_results.json
+
+   📦 models/                     ← (Generated during execution)
+      ├── logistic_regression.pkl
+      ├── random_forest.pkl
+      ├── lstm_best.pth
+      ├── gnn_transformer_best.pth
+      └── full_comparison.csv
+
+   📦 configs/                    ← Configuration files
+      ├── dataset.yaml
+      └── model.yaml
+
+⚙️ CONFIGURATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   requirements.txt               ← Python dependencies
+   .env.example                   ← Environment variables template
+   run_phase1.bat                 ← Windows Phase 1 automation
+   run_phase1.sh                  ← Linux/Mac Phase 1 automation
+
+================================================================================
+                            QUICK COMMAND REFERENCE
+================================================================================
+
+# View Interactive Menu (BEST START)
+python main.py
+
+# View Terminal Dashboard
+python dashboard.py
+
+# Run Complete Pipeline (All Phases 1-5)
+python run_all_phases.py
+
+# Run Specific Phases Only
+python run_all_phases.py 1          (Phase 1: Data preprocessing)
+python run_all_phases.py 2,3,4      (Phases 2-4: Model training)
+python run_all_phases.py 5          (Phase 5: Attack analysis)
+
+# Check Results After Running
+# - Model metrics: models/full_comparison.csv
+# - Analysis: data/phase5_results.json
+
+================================================================================
+                              FILE STATISTICS
+================================================================================
+
+Total Lines of Code: ~4,500 (Phases 1-5 implementation)
+Total Documentation: ~2,000 lines
+Phase Scripts: 9 files
+Dashboard/CLI: 3 files
+Documentation: 6 files (in root) + 3 (in docs/)
+
+Phase 1 (Data):     ~1,500 lines
+Phase 2 (Baseline): ~380 lines
+Phase 3 (Temporal): ~420 lines
+Phase 4 (Hybrid):   ~400 lines
+Phase 5 (Analysis): ~400 lines
+
+================================================================================
+                          EXECUTION TIMELINE
+================================================================================
+
+Setup:             ~2 minutes   (verify Python, install requirements)
+Documentation:     ~30 minutes  (read START.md → QUICKSTART.md → PHASE_STATUS)
+Phase 1 (Data):    ~20 minutes  (preprocessing)
+Phase 2 (Baseline):~10 minutes  (LR + RF training)
+Phase 3 (Temporal):~15 minutes  (LSTM + GRU training)
+Phase 4 (Hybrid):  ~20 minutes  (GNN+Transformer, 5-window forecast)
+Phase 5 (Analysis):~5 minutes   (Attack propagation, recommendations)
+──────────────────────────────────────────
+TOTAL:             30-70 minutes (depends on data size)
+
+================================================================================
+                              START HERE
+================================================================================
+
+1️⃣  Read: START.md (5 minutes)
+2️⃣  Run:  python main.py
+3️⃣  Choose: Option 1 (View Dashboard) or Option 4 (Run All Phases)
+4️⃣  Wait: 30-70 minutes for pipeline to complete
+5️⃣  Check: models/full_comparison.csv & data/phase5_results.json
+
+================================================================================
+                              NEXT PHASES (6-11)
+================================================================================
+
+Phase 6:  Counterfactual Defense Engine    (What-if simulator)
+Phase 7:  Explainability (SHAP + Attention) (Why this prediction?)
+Phase 8:  Backend API (FastAPI)            (REST endpoints)
+Phase 9:  Frontend Dashboard (React)       (Beautiful UI)
+Phase 10: Demo Mode                        (5-min jury presentation)
+Phase 11: Docker Deployment                (Full containerization)
+
+================================================================================
+                        🎯 YOU ARE HERE (Phases 1-5 Complete)
+================================================================================
+
+✅ All code ready
+✅ All documentation ready
+✅ Multiple entry points available
+✅ Ready to execute
+
+🚀 NEXT ACTION: python main.py
+
+================================================================================

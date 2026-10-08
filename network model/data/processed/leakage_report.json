@@ -1,0 +1,8 @@
+{
+  "overlap_train_val": 0,
+  "overlap_train_test": 0,
+  "overlap_val_test": 0,
+  "order_violations": [],
+  "identical_features_train_test": 0,
+  "hard_fail": false
+}

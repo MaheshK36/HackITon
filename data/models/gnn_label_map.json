@@ -1,0 +1,18 @@
+{
+  "label_map": {
+    "BENIGN": 0,
+    "PortScan": 1,
+    "BruteForce": 2,
+    "DataExfiltration": 3,
+    "DoS": 4,
+    "CommandExecution": 5
+  },
+  "rev_map": {
+    "0": "BENIGN",
+    "1": "PortScan",
+    "2": "BruteForce",
+    "3": "DataExfiltration",
+    "4": "DoS",
+    "5": "CommandExecution"
+  }
+}

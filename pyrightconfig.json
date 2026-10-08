@@ -1,0 +1,24 @@
+{
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/.git",
+    "**/node_modules"
+  ],
+  "extraPaths": [
+    ".",
+    "cyber_dashboard-main/unified_cybersecurity_system",
+    "cyber_dashboard-main/unified_cybersecurity_system/backend",
+    "digital twin 2",
+    "digital twin",
+    "network model",
+    "attack model",
+    "BLOCKCHAIN--main/BLOCKCHAIN--main",
+    "scripts"
+  ],
+  "pythonVersion": "3.13",
+  "pythonPlatform": "Windows",
+  "typeCheckingMode": "off"
+}

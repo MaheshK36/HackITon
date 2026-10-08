@@ -1,0 +1,32 @@
+# Configuration for Cyberattack Digital Twin & Progression Prediction System
+
+system:
+  window_size_sec: 10          # Default window size in seconds
+  window_step_sec: 5           # Sliding window step
+  rolling_history_size: 5      # Rolling buffer length N for temporal state
+  replay_speed_multiplier: 1.0 # Default replay speed multiplier
+
+ingestion:
+  csv_timestamp_col: "timestamp"
+  csv_src_ip_col: "src_ip"
+  csv_dst_ip_col: "dst_ip"
+  csv_src_port_col: "src_port"
+  csv_dst_port_col: "dst_port"
+  csv_protocol_col: "protocol"
+  csv_label_col: "label"
+
+features:
+  min_flows_per_window: 1
+  host_activity_threshold: 0.1
+
+prediction:
+  confidence_threshold_suspected: 0.35
+  confidence_threshold_observed: 0.70
+  lead_time_prob_threshold: 0.60
+  top_n_features: 5
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "data/models"
+  mitre_techniques: "mitre/techniques.json"

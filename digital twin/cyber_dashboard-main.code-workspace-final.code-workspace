@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../cyber_dashboard-main"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../BLOCKCHAIN--main"
+		},
+		{
+			"path": "../attack model"
+		},
+		{
+			"path": "../network model"
+		},
+		{
+			"path": "../digital twin 2"
+		}
+	],
+	"settings": {}
+}

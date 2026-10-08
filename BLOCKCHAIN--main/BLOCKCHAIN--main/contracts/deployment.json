@@ -1,0 +1,35 @@
+{
+  "network": "mantle_testnet",
+  "address": "0x7266cD152e08Ae7005256Aa598d4eFE110Ed530b",
+  "deployer": "0x07c05a8dd22B097Da462e1010ed4Bcb299CC40f0",
+  "timestamp": "2026-06-11T10:29:53.567Z",
+  "abi_path": "artifacts/contracts/MantleIntelAudit.sol/MantleIntelAudit.json",
+  "mantle_testnet": {
+    "contractName": "MantleIntelAudit",
+    "version": "2.0",
+    "network": "mantle_testnet",
+    "chainId": 5003,
+    "address": "0x7266cD152e08Ae7005256Aa598d4eFE110Ed530b",
+    "deployer": "0xB47Ba223B73980E69AEF53B0d202F9785698DAEa",
+    "blockNumber": 41387528,
+    "timestamp": "2026-07-17T20:22:13.246Z",
+    "explorerUrl": "https://sepolia.mantlescan.xyz/address/0x7266cD152e08Ae7005256Aa598d4eFE110Ed530b",
+    "abi_path": "artifacts/contracts/MantleIntelAudit.sol/MantleIntelAudit.json",
+    "features": [
+      "recordFinding()",
+      "verifyFinding()",
+      "getPublicFindings() — public paginated feed",
+      "getFindingsByType() — filter by anomaly type",
+      "getStats() — public stats",
+      "subscribe() — intel feed subscription"
+    ]
+  },
+  "nft_testnet": {
+    "address": "0xFAAcA6eE3b63b18C6bB39f77F48cdcc0043f792C",
+    "network": "mantle_sepolia",
+    "chainId": 5003,
+    "deployer": "0x07c05a8dd22B097Da462e1010ed4Bcb299CC40f0",
+    "mintTx": "0x3b5ffc0285b77380a496fa6475a7b36d388f7fb17930f6b6b74cbc3b5fb41fb5",
+    "deployedAt": "2026-06-11T11:04:19.678Z"
+  }
+}
